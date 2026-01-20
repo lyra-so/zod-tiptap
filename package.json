@@ -1,0 +1,36 @@
+{
+	"name": "zod-tiptap",
+	"version": "1.0.7",
+	"description": "Dynamically generate Zod schemas from TipTap extensions for type-safe AI integration and document validation",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"author": "Lyra",
+	"license": "MIT",
+	"scripts": {
+		"check-types": "tsc --noEmit",
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+	},
+	"keywords": [
+		"zod",
+		"tiptap",
+		"type-safe",
+		"ai",
+		"ai-sdk",
+		"document",
+		"validation"
+	],
+	"dependencies": {
+		"@tiptap/core": "^3.15.3",
+		"zod": "^4.3.5"
+	},
+	"devDependencies": {
+		"tsup": "^8.5.1",
+		"typescript": "^5.9.3"
+	},
+	"homepage": "https://lyra.so"
+}
